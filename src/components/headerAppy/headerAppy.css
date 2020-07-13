@@ -1,0 +1,20 @@
+ .headerAppy {
+    background-color: rgb(255, 94, 0);
+    height: 70px;
+}
+.h1 {
+    color: cornsilk;
+    margin-top: 5px;
+}
+.ava {
+    border-radius: 20px;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+.name {
+    color: cornsilk;
+    margin-top: 4px;
+}
+.bi-box-arrow-right, .bi-person {
+    margin-top: 10px;
+}

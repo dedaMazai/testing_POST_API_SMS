@@ -1,0 +1,39 @@
+.contact {
+    margin-top: 50px;
+}
+input {
+    position: relative;
+    margin: 3px;
+}
+.butTrue {
+    display: block;
+    margin-top: 2px;
+}
+.butHidden {
+    display: none;
+}
+.code {
+    margin-left: 130px;
+}
+.ok {
+    font-size: 25px;
+}
+.simple-input {
+    display: block;
+    width: 100%;
+    padding: 7px;
+    border: 1px solid #ccc8c8;
+    border-radius: 5px;
+    color: #333;
+    transition: all 0.3s ease-out;
+}
+
+.simple-input:hover {
+    border-radius: 8px
+}
+
+.simple-input:focus {
+    outline: none;
+    border-radius: 8px;
+    border: 4px solid #0affb5;
+}

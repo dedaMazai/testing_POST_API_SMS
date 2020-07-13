@@ -1,0 +1,22 @@
+.contact {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin:5% 45% 0 45%;
+    width:10%;
+}
+input {
+    position: relative;
+    margin: 3px;
+}
+.butTrue {
+    display: block;
+}
+.butHidden {
+    display: none;
+}
+.send {display: block;
+    border: 1px solid black;
+    width:15%;
+    height: 20%;
+}

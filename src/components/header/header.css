@@ -1,0 +1,6 @@
+ .header {
+    margin: 2px 0px;
+}
+.but {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(172, 172, 172, 0) 100%);
+}
