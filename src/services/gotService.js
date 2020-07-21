@@ -1,4 +1,3 @@
-
 export default class GotService {
     constructor() {
         this._apiBase = 'https://eventpacerstage.azurewebsites.net/api';
@@ -15,7 +14,7 @@ export default class GotService {
             }
         );
         if (!res.ok) {
-          throw new Error(`Could not fetch` +
+          throw new Error(`Could not fetch${this._apiBase}` +
             `, received ${res.status}`);
         }
         return await res.json();
