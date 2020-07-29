@@ -16,11 +16,11 @@ export default class  Inform extends Component{
     previewFile() {
         var file = this.myRef.current.files[0],
             reader = new FileReader();
-      
+
         reader.onloadend = () => {
             this.setState({img: reader.result})
         }
-      
+
         if (file) {
             reader.readAsDataURL(file);
         } else {

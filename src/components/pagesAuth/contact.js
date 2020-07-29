@@ -36,32 +36,27 @@ export default class  Contact extends Component{
 
     sendNum = () => {
         this.gotService.authTel(this.state.num)
-            .then(this.onTelLoaded())
+            .then(this.onTelLoaded)
             .catch(this.onError);
     }
     //Запрос к API для отправки смс на номер
 
     onTelLoaded = (tel) => {
-        console.log(tel)
-        this.setState({send: true})
+        if (tel.result === "Ok"){
+            this.setState({send: true})
+        }
     }
-
-    // onTelLoaded = (tel) => {
-    //     if (tel.result==="Ok"){
-    //         this.setState({send: true})
-    //     }
-    // }
     //Если API отвечает, что смс отправлено, открываем блок для ввода кода
 
     sendCode = () => {
         this.gotService.authCode(this.state.num,this.myCode.current.value)
-            .then(this.onCodeLoaded())
+            .then(this.onCodeLoaded)
             .catch(this.onError);
     }
     //Запрос к API для проверки введеного кода и фактического отправленого на номер
 
     onCodeLoaded = (telCode) => {
-        if (telCode.newUserCreated===true){
+        if (telCode.newUserCreated === true){
             this.setState({
                 star: true,
                 send: false

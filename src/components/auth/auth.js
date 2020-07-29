@@ -38,12 +38,12 @@ class Auth extends Component {
                                     onClick={this.props.onward}/>
                             {/* Кнопка перелистывает страницы, а на последнем слайде пропадает */}
                             <input  className={this.props.buttons===2?"butTrue1":"butHidden"}
-                                    type="submit"
+                                    type="button"
                                     disabled
                                     value="Далее"
                                     ref={this.myButton}
                                     onClick={this.props.runApp}/>
-                            {/* Подставляемся на место предыдущей кнопки "Далее", но она отправляет форму и открывает приложение */}
+                            {/* Подставляемся на место предыдущей кнопки "Далее", но она открывает приложение (и может отправлять форму если type="submit" */}
                         </Col>
                     </Row>
                 </form>

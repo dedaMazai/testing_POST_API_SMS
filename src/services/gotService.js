@@ -8,13 +8,11 @@ export default class GotService {
             method: 'POST',
             headers: {
             'Content-Type': 'application/json;charset=utf-8'
-            },
-            credentials: "include",
-            mode: "no-cors"
             }
-        );
+        });
+
         if (!res.ok) {
-          throw new Error(`Could not fetch${this._apiBase}` +
+          throw new Error(`Could not fetch ${this._apiBase}` +
             `, received ${res.status}`);
         }
         return await res.json();
@@ -24,11 +22,9 @@ export default class GotService {
              method: 'POST',
             headers: {
             'Content-Type': 'application/json;charset=utf-8'
-            },
-            credentials: "include",
-            mode: "no-cors",
             }
-        );
+        });
+
         if (!res.ok) {
           throw new Error(`Could not fetch` +
             `, received ${res.status}`);

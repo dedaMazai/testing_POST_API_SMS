@@ -1,3 +1,6 @@
 .ImagePreview {
     margin-top: 150px;
 }
+img {
+    border-radius: 5px;
+}
