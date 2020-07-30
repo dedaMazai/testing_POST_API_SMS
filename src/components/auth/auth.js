@@ -13,7 +13,7 @@ class Auth extends Component {
     }
 
     kilDisable = () => {
-        this.myButton.removeAttribute('disabled');
+        this.myButton.current.removeAttribute('disabled');
     };
     //Включаем кнопку отправки формы и перехода на страницы приложения
     render() {

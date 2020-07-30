@@ -18,7 +18,7 @@ export default class GotService {
         return await res.json();
     }
     authCode = async (tel,cod) => {
-        const res = await fetch(`${this._apiBase}/api/auth/login?phone=%2B${tel}&code=${cod}`, {
+        const res = await fetch(`${this._apiBase}/auth/login?phone=%2B${tel}&code=${cod}`, {
              method: 'POST',
             headers: {
             'Content-Type': 'application/json;charset=utf-8'

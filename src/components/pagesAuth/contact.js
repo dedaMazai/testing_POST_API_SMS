@@ -11,6 +11,7 @@ export default class  Contact extends Component{
         this.myCode = React.createRef();
         this.state = {
             num: "",
+            code: "",
             send: false,
             star: false,
             error: false
@@ -26,6 +27,10 @@ export default class  Contact extends Component{
         } else {
             this.setState({num: ""})
         }
+    }
+    //Проверка введеного номера и запись в state.num подходящего
+    regCode = () => {
+        this.setState({code: this.myCode.current.value})
     }
     //Проверка введеного номера и запись в state.num подходящего
 
@@ -49,14 +54,16 @@ export default class  Contact extends Component{
     //Если API отвечает, что смс отправлено, открываем блок для ввода кода
 
     sendCode = () => {
-        this.gotService.authCode(this.state.num,this.myCode.current.value)
-            .then(this.onCodeLoaded)
-            .catch(this.onError);
+        if (this.state.code.length > 3){
+            this.gotService.authCode(this.state.num,this.state.code)
+                .then(this.onCodeLoaded)
+                .catch(this.onError);
+        }
     }
     //Запрос к API для проверки введеного кода и фактического отправленого на номер
 
     onCodeLoaded = (telCode) => {
-        if (telCode.newUserCreated === true){
+        if (telCode.newUserCreated === true || telCode.newUserCreated === false){
             this.setState({
                 star: true,
                 send: false
@@ -86,7 +93,7 @@ export default class  Contact extends Component{
                                 <Jumbotron fluid>
                                     <Col>
                                         <h1 className=" text-center">КОД:</h1>
-                                        <Input ref={this.myCode}/><br/>
+                                        <input onChange={this.regCode} className="simple-input" ref={this.myCode}/><br/>
                                         <Input type="button" value="Отправить" onClick={this.sendCode} />
                                     </Col>
                                 </Jumbotron>
