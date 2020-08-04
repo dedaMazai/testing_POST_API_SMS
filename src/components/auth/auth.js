@@ -39,7 +39,6 @@ class Auth extends Component {
                             {/* Кнопка перелистывает страницы, а на последнем слайде пропадает */}
                             <input  className={this.props.buttons===2?"butTrue1":"butHidden"}
                                     type="button"
-                                    disabled
                                     value="Далее"
                                     ref={this.myButton}
                                     onClick={this.props.runApp}/>
