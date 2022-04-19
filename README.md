@@ -1,11 +1,17 @@
 ## REQUEST SMS (API POST)
-В этом проекте я знакомился с обращением к API через POST-запросы.
-Я реализовал React приложение в связке с Redux, так как мне нравится именно это направление и развиваюсь я в нем.
-Также в проекте я знакомился с reactstrap и Bootstrap.
+In this project, I got acquainted with the API for the first time.
+Implementing React + Redux application, using Bootstrap.
+..............
+В данном проекте я впервые познакомился с API.
+Реализуя React + Redux приложение, с применением Bootstrap.
 ## The essence app:
-При запуске приложения появляется кнопка на экране `Login`, по нажатию на нее открывается форма для регистрации (нас встречает приветственное письмо, далее можно ввести свои данные, выбрать фотографию и увидеть preview), но основное на что я делал акцент это поля ввода телефона, при введении которого в правильном формате, появляется кнопка для его подтверждения. 
-При нажатии на неё, производится API запрос на отправку кода подтверждения, если смс отправленно, появляется окно ввода отправленого кода.
-После ввода кода и отправки, если новый пользователь зарегистрирован открывается основное приложение.
+When launching the application, the `Login` button appears, clicking on it opens a registration form (we are greeted by a welcome letter, then you can enter your details, select a photo and see a preview), PAY ATTENTION to the phone input field, if this field is filled in correctly, a confirmation button becomes available. 
+When pressed, a POST request is made to send a confirmation code, if an SMS is sent to the entered number, a confirmation window is displayed.
+After confirming the code, if a new user is registered, the main application opens.
+..............
+При запуске приложения появляется кнопка `Login`, нажимая на нее открывается форма для регистрации (нас встречает приветственное письмо, далее можно ввести свои данные, выбрать фотографию и увидеть preview), ОБРАТИТЕ ВНИМАНИЕ на поле ввода телефона, при правильном заполнении данного поля, становится доступна кнопка подтверждения. 
+При нажатии которой, производится POST запрос для отправки кода подтверждения, если смс отправленно на введеный номер, отображается окно подтверждения.
+После подтверждения кода, если новый пользователь зарегистрирован открывается основное приложение.
 ## Preview app:
 ![Иллюстрация к проекту](https://github.com/dedaMazai/testing_POST_API_SMS/raw/master/Preview.gif)
 
