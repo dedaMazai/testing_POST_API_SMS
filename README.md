@@ -1,18 +1,20 @@
 ## REQUEST SMS (API POST)
 !!! The API is not working at the moment !!!
+#
 !!! The API is not working at the moment !!!
+#
 !!! The API is not working at the moment !!!
 #
 In this project, I got acquainted with the API for the first time.
 Implementing React + Redux application, using Bootstrap.
-..............
+#
 В данном проекте я впервые познакомился с API.
 Реализуя React + Redux приложение, с применением Bootstrap.
 ## The essence app:
 When launching the application, the `Login` button appears, clicking on it opens a registration form (we are greeted by a welcome letter, then you can enter your details, select a photo and see a preview), PAY ATTENTION to the phone input field, if this field is filled in correctly, a confirmation button becomes available. 
 When pressed, a POST request is made to send a confirmation code, if an SMS is sent to the entered number, a confirmation window is displayed.
 After confirming the code, if a new user is registered, the main application opens.
-..............
+#
 При запуске приложения появляется кнопка `Login`, нажимая на нее открывается форма для регистрации (нас встречает приветственное письмо, далее можно ввести свои данные, выбрать фотографию и увидеть preview), ОБРАТИТЕ ВНИМАНИЕ на поле ввода телефона, при правильном заполнении данного поля, становится доступна кнопка подтверждения. 
 При нажатии которой, производится POST запрос для отправки кода подтверждения, если смс отправленно на введеный номер, отображается окно подтверждения.
 После подтверждения кода, если новый пользователь зарегистрирован открывается основное приложение.
