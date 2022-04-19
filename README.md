@@ -1,9 +1,5 @@
 ## REQUEST SMS (API POST)
 !!! The API is not working at the moment !!!
-/
-!!! The API is not working at the moment !!!
-/
-!!! The API is not working at the moment !!!
 #
 In this project, I got acquainted with the API for the first time.
 Implementing React + Redux application, using Bootstrap.
